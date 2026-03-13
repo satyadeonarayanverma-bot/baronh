@@ -1,0 +1,214 @@
+/* Premium Footer Styles - Cloudiva.ai (Exact Match Redesign) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+footer.premium-footer {
+    background-color: #030a16;
+    color: #ffffff;
+    padding: 60px 0 0 0;
+    font-family: 'Inter', sans-serif;
+    border-top: 2px solid #33a1fd;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+    gap: 0;
+}
+
+/* Vertical Divider Layout */
+.footer-col {
+    padding: 20px 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-col:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+/* Typography & Headers */
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-col h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #33a1fd;
+    opacity: 0.8;
+}
+
+/* Link Styling */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 15px;
+}
+
+.footer-col ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #33a1fd;
+}
+
+/* Brand Column (Col 1) */
+.footer-brand {
+    padding-right: 40px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo-symbol {
+    color: #33a1fd;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo-text span {
+    color: #33a1fd;
+}
+
+.tagline {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.brand-desc {
+    color: #94a3b8;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contact-section h4 {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact-info p {
+    font-size: 13px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.linkedin-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #0077b5;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 2px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    margin-top: 40px;
+    padding: 25px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-divider {
+    height: 20px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-right: 10px;
+}
+
+.legal-links {
+    display: flex;
+    gap: 15px;
+}
+
+.legal-links a {
+    color: #64748b;
+    text-decoration: none;
+}
+
+.legal-links a:hover {
+    color: #33a1fd;
+}
+
+/* Responsiveness */
+@media (max-width: 1100px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-col {
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
